@@ -4,7 +4,23 @@
   margin: 0;
   padding: 0;
 }
+#title {
+  text-shadow: 4px 1px 1px #666;
 
+}
+#pfp {
+  border-radius: 100%;
+}
+div.links {
+  
+  display: block;
+  background-color: #d2d2d2;
+  padding-bottom: 25px;
+  block-size: 250px;
+  width: 400px;
+  margin: auto; 
+  margin-bottom: 25px;
+}
 /* Basic typography and layout */
 body {
   font-family: Arial, sans-serif;
@@ -21,9 +37,10 @@ body h3 {
 
 h1 {
   padding-top: 0;
-  font-size: 3rem;
+  font-size: 120px;
   text-align: center;
   margin: 2rem 0;
+
 }
 
 /* Navigation */
