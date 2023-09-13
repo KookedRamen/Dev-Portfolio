@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="feedback.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <h1>Give me some feedback!</h1>
+    <div class="container">
+        <form>
+            <p>1. How easy was it to navigate the website?</p>
+            <select name="navigation">
+                <option value="very-easy">Very easy</option>
+                <option value="somewhat-easy">Somewhat easy</option>
+                <option value="neutral">Neutral</option>
+                <option value="somewhat-difficult">Somewhat difficult</option>
+                <option value="very-difficult">Very difficult</option>
+            </select>
+
+            <p>2. How visually appealing was the website?</p>
+            <select name="visual-appeal">
+                <option value="very-appealing">Very appealing</option>
+                <option value="somewhat-appealing">Somewhat appealing</option>
+                <option value="neutral">Neutral</option>
+                <option value="somewhat-unappealing">Somewhat unappealing</option>
+                <option value="very-unappealing">Very unappealing</option>
+            </select>
+
+            <p>3. Was the website responsive?</p>
+            <select name="responsiveness">
+                <option value="yes">Yes, it was responsive</option>
+                <option value="somewhat">Somewhat responsive</option>
+                <option value="no">No, it was not responsive</option>
+            </select>
+
+            <p>4. Was the website fast to load?</p>
+            <select name="loading-speed">
+                <option value="fast">Yes, it loaded quickly</option>
+                <option value="somewhat-fast">It loaded somewhat quickly</option>
+                <option value="average">It was average in terms of loading time</option>
+                <option value="somewhat-slow">It loaded somewhat slowly</option>
+                <option value="very-slow">It was very slow to load</option>
+            </select>
+
+            <p>5. Did the website highlight the developer's skills and experience effectively?</p>
+            <select name="skills-highlight">
+                <option value="yes">Yes, it effectively highlighted their skills and experience</option>
+                <option value="somewhat">Somewhat effectively</option>
+                <option value="neutral">Neutral</option>
+                <option value="somewhat-ineffective">Somewhat ineffectively</option>
+                <option value="very-ineffective">Very ineffectively</option>
+            </select>
+
+            <p>6. Did you encounter any technical issues or bugs while browsing the website?</p>
+            <select name="technical-issues">
+                <option value="no">No, I did not encounter any issues</option>
+                <option value="minor">Yes, I encountered some minor issues</option>
+                <option value="major">Yes, I encountered some major issues</option>
+            </select>
+
+            <p>7. Overall, how satisfied were you with the website?</p>
+            <select name="satisfaction">
+                <option value="very-satisfied">Very satisfied</option>
+                <option value="somewhat-satisfied">Somewhat satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="somewhat-dissatisfied">Somewhat dissatisfied</option>
+                <option value="very-dissatisfied">Very dissatisfied</option>
+            </select>
+            <p>8. How did you hear about me?</p>
+            <label>
+              <input id="checkbox" type="checkbox" name="source" value="social-media">
+              Social Media
+            </label>
+            <label>
+              <input id="checkbox" type="checkbox" name="source" value="search-engine">
+              Search engine
+            </label>
+            <label>
+              <input id="checkbox" type="checkbox" name="source" value="word-of-mouth">
+              Word of mouth
+            </label>
+            <label>
+              <input id="checkbox" type="checkbox" name="source" value="online-advertising">
+              Online Advertising
+            </label>
+            <label>
+              <input id="checkbox" type="checkbox" name="source" value="other">
+              Other
+            </label>
+
+            <p>9. Any additional comments or suggestions for improvement?</p>
+            <textarea name="comments" rows="4" cols="50"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p>Your selections:</p>
+        <pre id="feedback-display"></pre>
+
+
+    </div>
+</body>
+</html>

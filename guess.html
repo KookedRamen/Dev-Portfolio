@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <h1>Can you guess the number I'm thinking of?</h1>
+    <p>I am thinking of a number between 1 and 100</p>
+    <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type = "text" 
+                 id = "guessField" 
+               class = "guessField">
+        <input type = "submit" 
+               value = "Submit guess" 
+               class = "guessSubmit" 
+               id = "submitguess">
+    </div>
+    <script type = "text/javascript">
+  
+      // random value generator
+      var y = Math.floor(Math.random() * 10 + 1);
+  
+      // counting the number of guesses
+      // made for correct Guesses
+      var guess = 1;
+  
+      document.getElementById("submitguess").onclick = function(){
+  
+        // number guessed by user    
+          var x = document.getElementById("guessField").value;
+  
+          if(x == y)
+          {    
+            alert("CONGRATULATIONS!!! YOU GUESSED IT IN "
+                  + guess + " GUESSES ");
+          }
+          else if(x > y) /* if guessed number is greater than actual number*/
+          {    
+            guess++;
+            alert("BEEP BOOP!! TRY A SMALLER NUMBER");
+          }
+          else
+          {
+            guess++;
+            alert("BEEP BOOP!! TRY A LARGER NUMBER")
+          }
+      }
+    </script>
+</body>
+</html>
