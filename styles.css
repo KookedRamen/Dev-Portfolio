@@ -8,8 +8,18 @@
   text-shadow: 4px 1px 1px #666;
 
 }
+h3, #hi {
+  display: flex;
+  justify-content: left;
+  margin-left: 10%;
+  font-size: 35px;
+}
 #pfp {
   border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  object-fit: ;
+
 }
 div.links {
   
