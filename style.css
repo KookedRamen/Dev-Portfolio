@@ -1,35 +1,96 @@
-h1 {
-    color: white;
-    font-size: 120px;
-    text-align: center;
-    padding-block: 25px;
-    
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
-.header{
-    padding-top: -10px;
-    background-image: url('images/codeImage.jpeg');
-    background-size: 100% 150%;
-    margin-left: -35px;
-    margin-right: -30px;
-    padding-right: 0%;
-    margin-top: -100px;
+
+nav {
+    display: flex;
+    height: 5vh;
+    background-color: dimgray;
+    font-size: 1.5rem;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>button{
+    background-color: dimgray;
+    border: none;
+    justify-self: unset;
+}
+
+.material-symbols-outlined {
+    padding: .2rem;
+}
+
+ul {
+    display: flex;
+    margin-right: auto;
+    /* margin-left: auto; */
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 20px;
+}
+
+.navLinks {
+    color: #3f3f3f;
+    text-decoration: none;
 }
 
 body {
-    
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(213, 213, 213);
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-    
+h1 {
+    font-size: 5rem;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 
-.dark-mode h1{
-    
+.nameCard {
+    padding: 10rem;
+}
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+main>h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 0 0 5%;
+    text-align: center;
+}
+
+.quote{
+    background-color: dimgray;
+    text-align: center;
+    padding: 15rem;
+    color: #3f3f3f;
+    font-size: 2rem;
+}
+blockquote{
+    padding: 1rem;
+    font-style: italic;
+}
+citation {
+    padding-left: 37rem;
+}
+
+.links {
+    text-align: center;
+    padding: 2rem;
+
 }

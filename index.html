@@ -2,41 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travis Thundershield</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-    <script src="./projects.js" defer></script>
-    <script src="./project_objects.js" defer></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+    <header>
+        <nav>
+            <ul id="123">
+                <li><a class="navLinks" href="http://">Home</a></li>
+                <li><a class="navLinks" href="http://">About</a></li>
+                <li><a class="navLinks" href="http://">Projects</a></li>
+                <li><a class="navLinks" href="http://">Contact</a></li>
+                <li><a class="navLinks" href="http://">Feedback</a></li>
+            </ul>
+            <button class="dark_mode">
+                <div class="material-symbols-outlined">
+                    <span class="material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </div>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="nameCard">
             
-            <div class="mode-toggle">
-                <label for="modeSwitch">Theme</label>
-                <input type="checkbox" id="modeSwitch">
-            </div>
-        </ul>
-    </nav>
-    <h3 id="hi">Hi I'm</h3>
-    <h1 id="title">Travis Thundershield</h1>
-    <img id="pfp" src="images/pfp.jpg"/>
-    <div class="links">
-        <h3>Personal Links</h3>
+            <h1>Travis Thundershield</h1>
+            <p>Software Engineer | Web Developer | Certified Scrum Master</p>
+        </div>
+        
+
+
+        
+    </main>
+    <section class="quote">
+        <blockquote><em>"As a programmer, it is your job to put yourself out of business. What you do today can be automated tomorrow."</em></blockquote>
+        <citation>-Doug McIlroy</citation>
+    </section>
+    <section class="links">
+        <div class="leftLinks">
+            <h3>Personal Links</h3>
         <ul>
-            <a href="https://github.com/KookedRamen">GitHub</a>
-            <a href="https://linkedin.com/in/travis-thundershield-25b035228">LinkedIn</a>
+            <li><a href="http://">GitHub</a></li>
+            <li><a href="http://">LinkedIn</a></li>
+            <li><a href="http://">Stack Overflow</a></li>
         </ul>
-    </div>
-   
+        </div>
+        <div class="rightLinks">
+            <h3>Helpful Websites</h3>
+            <ul><a href="http://">Link1</a></ul>
+            <ul><a href="http://">Link2</a></ul>
+            <ul><a href="http://">Link3</a></ul>
+        </div>
+        
+    </section>
+    <footer>
+        <p>this is the footer ©</p>
+    </footer>
+</body>
 </html>
