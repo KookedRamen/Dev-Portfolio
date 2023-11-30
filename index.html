@@ -8,25 +8,30 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
     <script src="./projects.js" defer></script>
     <script src="./project_objects.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="feedback.html">Feedback</a></li>
-            
-            <div class="mode-toggle">
-                <label for="modeSwitch">Theme</label>
-                <input type="checkbox" id="modeSwitch">
-            </div>
         </ul>
+
+    </nav>
+    <nav class="mobile">
+        <img src="" alt="">
+        <h1>Travis Thundershield</h1>
+        <button><span class="material-symbols-outlined">
+            menu
+            </span></button>
     </nav>
     <h3 id="hi">Hi I'm</h3>
     <h1 id="title">Travis Thundershield</h1>

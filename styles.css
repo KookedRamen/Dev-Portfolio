@@ -1,248 +1,61 @@
-/* Reset default styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-#title {
-  text-shadow: 4px 1px 1px #666;
-
-}
-h3, #hi {
-  display: flex;
-  justify-content: left;
-  margin-left: 10%;
-  font-size: 35px;
-}
-#pfp {
-  border-radius: 100%;
-  height: 250px;
-  width: 250px;
-  object-fit: ;
-
-}
-div.links {
+@media all and (min-width:960px) and (max-width: 1024px) {
+    /* put your css styles in here */
+  }
   
-  display: block;
-  background-color: #d2d2d2;
-  padding-bottom: 25px;
-  block-size: 250px;
-  width: 400px;
-  margin: auto; 
-  margin-bottom: 25px;
+  @media all and (min-width:801px) and (max-width: 959px) {
+    /* put your css styles in here */
+  }
+  
+  @media all and (min-width:769px) and (max-width: 800px) {
+    /* put your css styles in here */
+  }
+  
+  @media all and (min-width:569px) and (max-width: 768px) {
+    /* put your css styles in here */
+  }
+  
+  @media all and (min-width:481px) and (max-width: 568px) {
+    /* put your css styles in here */
+  }
+  
+  @media all and (min-width:321px) and (max-width: 480px) {
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  li a{
+    text-decoration: none;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    padding: 5%;
+  }
+  .mobile button {
+    border: none;
+    background: none;
+    margin-left: auto;
+    color: white;
+  }
+  .mobile h1{
+    color: white;
+    font-size: 1.7rem;
+  }
 }
-/* Basic typography and layout */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  text-align: center;
-}
-
-body h3 {
-  margin-top: 100px;
-  margin-bottom: 5px;
-}
-
-h1 {
-  padding-top: 0;
-  font-size: 120px;
-  text-align: center;
-  margin: 2rem 0;
-
-}
-
-/* Navigation */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #666;
-}
-
-nav li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #111;
-}
-
-/* Form and input styles */
-table {
-  color: ali; /* This should be a valid color value */
-  text-decoration: none;
-}
-
-input[type="submit"] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 30px;
-  background-color: #f2f2f2;
-  padding: 25px;
-}
-
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-/* Navigation box shadow */
-nav {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 0px;
-}
-
-/* Dark mode toggle styles */
-.toggle-container {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: -100vw;
-}
-
-.toggle-label {
-  width: 60px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-}
-
-.toggle-label:after {
-  content: "";
-  width: 26px;
-  height: 26px;
-  background-color: #fff;
-  border-radius: 13px;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: left 0.5s ease;
-}
-
-#toggle:checked + .toggle-label {
-  background-color: #4c4c4c;
-}
-
-#toggle:checked + .toggle-label:after {
-  left: calc(100% - 28px);
-}
-
-.dark-mode {
-  color: #fff;
-  background-color: #333;
-}
-
-/* Image gallery styles */
-img {
-  height: 200px;
-  width: 200px;
-}
-
-.img-gallery {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-gallery img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-/* Google Map styles */
-#map {
-  height: 75%;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Links styling */
-.links ul a {
-  display: flex;
-  flex-direction: column;
-  color: rgb(70, 70, 70);
-  text-decoration: none;
-  padding-top: 15px;
-  margin-top: 35px;
-  font-size: large;
-  justify-content: center;
-}
-
-/* Custom map control button */
-.custom-map-control-button,
-button {
-  display: block;
-  justify-items: center;
-  background-color: #fff;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  padding: 0 0.5em;
-  font: 400 18px Roboto, Arial, sans-serif;
-  overflow: hidden;
-  height: 40px;
-  cursor: pointer;
-}
-
-.custom-map-control-button:hover,
-button:hover {
-  background: rgb(235, 235, 235);
-}
-
-/* Activity container */
-#activityContainer {
-  border-radius: 30px;
-  background-color: #f2f2f2;
-  padding: 25px;
-  display: block;
-  text-align: center;
-}
-
-#generateBtn {
-  margin: auto;
-  margin-top: 15px;
-}
-
+  
+  @media all and (min-width:0px) and (max-width: 320px) {
+    /* put your css styles in here */
+  }
