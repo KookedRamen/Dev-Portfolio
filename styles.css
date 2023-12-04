@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('https://fonts.googleapis.com/css?family=Anonymous Pro');
+}
 @media all and (min-width:960px) and (max-width: 1024px) {
     /* put your css styles in here */
   }
@@ -24,7 +28,7 @@
         align-items: center;
         justify-content: center;
   }
-  li{
+  nav li{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,24 +42,73 @@
   .desktop{
     display: none;
   }
-  .mobile{
+  nav{
     display: flex;
     background-color: gray;
     align-items: center;
     padding: 5%;
   }
   .mobile button {
-    border: none;
-    background: none;
-    margin-left: auto;
-    color: white;
   }
   .mobile h1{
     color: white;
     font-size: 1.7rem;
+  }
+  header h3{
+    font-size: 2rem;
+    padding: 5%;
+  }
+  #title{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .mobile p{
+    padding: 5%;
+    text-align: center;
+  }
+  .mobile h3{
+    font-size: 1.5rem;
+  }
+  .mobile h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+  body{
+    font-family: "Anonymous Pro", serif;
+  }
+  .headerGroup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15%;
+  }
+  .about{
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  
+  
+  #intro{
+    padding-top: 15%;
+  }
+  #hi{
+    padding-top: 15%;
+  }
+  #menu{
+    margin-left: 20%;
+    background: none;
+    border: none;
+    color: white;
+  }
+  #menu span{
+    font-size: 2.5rem;
+  }
+  #contact{
+    margin: auto;
   }
 }
   
   @media all and (min-width:0px) and (max-width: 320px) {
     /* put your css styles in here */
   }
+  
