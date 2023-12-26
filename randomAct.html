@@ -2,24 +2,37 @@
 <html>
 <head>
   <title>Random Activity Generator</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
-        crossorigin="anonymous"></script>
-    <script src="randomAct.js"></script>
+        crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="reset.css">
+
+    <script src="randomAct.js"defer></script>
+    <link rel="stylesheet" href="randdomact.css">
+
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
-    </nav>
-  <h1>Random Activity Generator</h1>
-  <div id="activityContainer"></div>
-  <button id="generateBtn">Generate Random Activity</button>
-</body>
+    <div class="content">
+      <div class="desktop">
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="Projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="card">
+          <h1>Random Activity Generator</h1>
+        <div class="activity-card">
+            <div id="activityContainer">
+                <div id="activity"></div>
+                <button id="generateBtn">Generate Random Activity</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    </body>
 </html>
